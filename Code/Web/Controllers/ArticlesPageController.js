@@ -27,14 +27,14 @@
             stompClient.connect({}, function(frame){
                 console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
                 console.log("Connected " + frame);
-                stompClient.subscribe('http://localhost:8080/subscribe', function(message){
+                stompClient.subscribe("/subscribe", function(message){
+                    $scope.articles = JSON.parse(message.body);
+                    $scope.$apply();
                     console.log(JSON.parse(message.body).content);
                     console.log(message);
                     console.log("I am somehow subscribed???");
                 });
             });
-
-            //stompClient.send("http://localhost:8080/article/subscribe/articles", {}, {});
 
             ArticleComm.getAll().then(function successCallback(response){
 
