@@ -1,0 +1,32 @@
+<div ng-init="init()">
+
+    <h4>Write an article</h4>
+
+    <div>
+        <textarea ng-model="title">Title</textarea>
+    </div>
+
+    <div>
+        <textarea ng-model="abstract">Abstract</textarea>
+    </div>
+
+
+    <div>
+        <textarea ng-model="body">Body</textarea>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-default" ng-click="addArticle()">Add article!</button>
+    </div>
+
+    <h4>Articles available</h4>
+
+    <div>
+
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="article in articles" ng-click="editArticle(article.id)"> {{article.title}} </li>
+        </ul>
+
+    </div>
+
+</div>

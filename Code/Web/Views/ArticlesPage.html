@@ -1,0 +1,13 @@
+<div ng-init="init()">
+    
+    <h4>Articles available</h4>
+
+    <div>
+
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="article in articles" ng-click="viewArticle(article.id)"> {{article.title}} </li>
+        </ul>
+
+    </div>
+        
+</div>

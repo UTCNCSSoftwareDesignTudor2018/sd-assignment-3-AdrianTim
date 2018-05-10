@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+</head>
+
+<body ng-app="Assig3">
+
+    <span>Welcome to the news application!</span>
+
+    <ng-view>
+
+    </ng-view>
+</body>
+
+<footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-messages.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
+
+    <script src="app.js"></script>
+
+    <script src="Controllers/LandingPageController.js"></script>
+    <script src="Controllers/WriterPageController.js"></script>
+    <script src="Controllers/ArticlesPageController.js"></script>
+    <script src="Controllers/ViewArticlePageController.js"></script>
+    <script src="Controllers/EditArticlePageController.js"></script>
+
+    <script src="Services/WriterComm.js"></script>
+    <script src="Services/ArticleComm.js"></script>-
+    <script src="Services/AuthComm.js"></script>
+
+</footer>
+
+</html>
